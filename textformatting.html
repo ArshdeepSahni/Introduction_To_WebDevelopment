@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+                                <!-- STYLE -->
+
+    <style>
+        body{
+
+        }
+        h1{
+            padding-bottom: 10%;
+            margin-left: 50px;
+            font-family: fantasy;
+            color: transparent;
+            animation: move 3s infinite ease-in-out;
+            font-size: 70px;
+            transform: translateX(1%) rotateY(180deg);
+
+        }
+        @keyframes move{
+            30%{
+                color: rgb(57, 149, 255);
+                transform: translateX(1%) ;
+            }
+            60%{
+                color: rgba(28, 172, 255, 0);
+                transform: translateX(0%) ;
+            }
+        }
+        .p1{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand1 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand1 {
+            50%{
+                width: 400px;
+            }
+        }
+        .p2{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand2 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand2 {
+            50%{
+                width: 600px;
+            }
+        }
+        .p3{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand3 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand3 {
+            50%{
+                width: 300px;
+            }
+        }
+        .p4{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand4 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand4{
+            50%{
+                width: 1050px;
+            }
+        }
+        .p5{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand5 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand5 {
+            50%{
+                width: 400px;
+            }
+        }
+        .p6{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand6 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand6 {
+            50%{
+                width: 550px;
+            }
+        }
+        .p7{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand7 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand7 {
+            50%{
+                width: 1000px;
+            }
+        }
+        .p8{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand8 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand8 {
+            50%{
+                width: 250px;
+            }
+        }
+        .p9{
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: expand9 2s infinite ease-in-out;
+            padding: 10px;
+            width: 200px;
+            background: orange;
+            border-radius: 50px;
+        }
+    
+        @keyframes expand9 {
+            50%{
+                width: 300px;
+            }
+        }
+        button{
+            box-shadow: 0px 10px 50px  black;
+            font-size: 20px;
+            color: honeydew;
+            width: 150px;
+            margin-top: 10%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(60, 144, 253);
+        }
+        #b{
+            visibility: hidden;
+        }
+        #i{
+            visibility: hidden;
+        }
+        #strong{
+            visibility: hidden;
+        }
+        #em{
+            visibility: hidden;
+        }
+        #mark{
+            visibility: hidden;
+        }
+        #small{
+            visibility: hidden;
+        }
+        #del{
+            visibility: hidden;
+        }
+        #ins{
+            visibility: hidden;
+        }
+        #sub{
+            visibility: hidden;
+        }
+        #sup{
+            visibility: hidden;
+        }
+    </style>
+
+
+
+
+                                <!-- SCRIPT -->
+
+    <script>
+        var b = 0;
+        var i = 0;
+        var strong = 0;
+        var em = 0;
+        var mark = 0;
+        var small = 0;
+        var del = 0;
+        var ins = 0;
+        var sub = 0;
+        var sup = 0;
+        function bold(){
+            b=b+1;
+            if(b%2==1){
+                document.getElementById('b').style.visibility='visible';
+            }
+            if(b%2==0){
+                document.getElementById('b').style.visibility='hidden';
+            }
+        }
+
+        function italic(){
+            i=i+1;
+            if(i%2==1){
+                document.getElementById('i').style.visibility='visible';
+            }
+            if(i%2==0){
+                document.getElementById('i').style.visibility='hidden';
+            }
+        }
+
+        function strongs(){
+            strong=strong+1;
+            if(strong%2==1){
+                document.getElementById('strong').style.visibility='visible';
+            }
+            if(strong%2==0){
+                document.getElementById('strong').style.visibility='hidden';
+            }
+        }
+
+        function emphasis(){
+            em=em+1;
+            if(em%2==1){
+                document.getElementById('em').style.visibility='visible';
+            }
+            if(em%2==0){
+                document.getElementById('em').style.visibility='hidden';
+            }
+        }
+
+        function marks(){
+            mark=mark+1;
+            if(mark%2==1){
+                document.getElementById('mark').style.visibility='visible';
+            }
+            if(mark%2==0){
+                document.getElementById('mark').style.visibility='hidden';
+            }
+        }
+
+        function smalls(){
+            small=small+1;
+            if(small%2==1){
+                document.getElementById('small').style.visibility='visible';
+            }
+            if(small%2==0){
+                document.getElementById('small').style.visibility='hidden';
+            }
+        }
+        
+        function dels(){
+            del=del+1;
+            if(del%2==1){
+                document.getElementById('del').style.visibility='visible';
+            }
+            if(del%2==0){
+                document.getElementById('del').style.visibility='hidden';
+            }
+        }
+
+        function insert(){
+            ins=ins+1;
+            if(ins%2==1){
+                document.getElementById('ins').style.visibility='visible';
+            }
+            if(ins%2==0){
+                document.getElementById('ins').style.visibility='hidden';
+            }
+        }
+
+        function subs(){
+            sub=sub+1;
+            if(sub%2==1){
+                document.getElementById('sub').style.visibility='visible';
+            }
+            if(sub%2==0){
+                document.getElementById('sub').style.visibility='hidden';
+            }
+        }
+
+        function sups(){
+            sup=sup+1;
+            if(sup%2==1){
+                document.getElementById('sup').style.visibility='visible';
+            }
+            if(sup%2==0){
+                document.getElementById('sup').style.visibility='hidden';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <b><h1>HTML TAGS</h1></b>
+    <ul>
+    <li><button onclick="bold()"><b>BOLD</b></button><p class="p1"><b id="b">This Is My Webpage</b><br></p></li>
+    <li><button onclick="italic()"><i>ITALIC</i></button><p class="p2"><i id="i">This Is My Webpage</i><br></p></li>
+    <li><button onclick="strongs()"><strong>STRONG</strong></button><p class="p2"><strong id="strong">This Is My Webpage</strong><br></p></li>
+    <li><button onclick="emphasis()"><em>EMPHASIS</em></button><p class="p3"><em id="em">This Is My Webpage</em><br></p></li>
+    <li><button onclick="marks()"><mark>MARK</mark></button><p class="p4"><mark id="mark">This Is My Webpage</mark><br></p></li>
+    <li><button onclick="smalls()"><small>SMALL</small></button><p class="p5"><small id="small">This Is My Webpage</small><br></p></li>
+    <li><button onclick="dels()"><del>DELETE</del></button><p class="p6"><del id="del">This Is My Webpage</del><br></p></li>
+    <li><button onclick="insert()"><ins>INSERT</ins></button><p class="p7"><ins id="ins">This Is My Webpage</ins><br></p></li>
+    <li><button onclick="subs()"><sub>SUBSCRIPT</sub></button><p class="p8"><sub id="sub">This Is My Webpage</sub><br></p></li>
+    <li><button onclick="sups()"><sup>SUPERSCRIPT</sup></button><p class="p9"><sup id="sup">This Is My Webpage</sup></p></li>
+    </ul>
+    
+
+
+                                                <!-- DAY-2
+    <hr style="height: 50;">day2<hr>
+    <q cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </q><br>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</q>
+    </blockquote><br>
+    <abbr title="its abbr">hello all!</abbr><br>
+    <bdo dir="rtl">right to left</bdo><br>
+    <address>its address 1r2 uhdwi 222 3344##$$$</address><br><i>hiiiiii</i> -->
+
+    
+</body>
+</html>
+
+
+
+
+
