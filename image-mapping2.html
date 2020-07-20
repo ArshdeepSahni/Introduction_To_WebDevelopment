@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        /* *{
+            background: #000;
+            color: greenyellow;
+            text-align: center;
+        } */
+        *{
+            color: greenyellow;
+            text-align: center;
+        }
+        body{
+            background: linear-gradient(to bottom,black,white,white,black);
+        }
+        h1{
+            text-align: center;
+        }
+        .action{
+            background: rgba(0, 0, 0, 0);
+            padding: 10px;
+            border: 2px dashed greenyellow;
+        }
+        table {
+            margin-left: 35%;
+            height: 500px;
+            width:30%;
+            }
+        table, th, td {
+                margin-top: 1%;
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        #t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        #t01 th {
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+        h2{
+            margin-top: 50%;
+        }
+        #st{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Its MY phone, <br>not IPHONE</h1>
+    <h3>Developer's LIFE can easily be judged by '1' thing:</h3><br>
+    <a class="action" href="#set">SCREEN TIME</a><br>
+    <h2 id="set">Click on ' SETTINGS '...</h2>
+    <img src="iphone.png" usemap="#image-map" id="img1">
+
+<map name="image-map">
+    <area target="_self" alt="Settings" title="Settings" href="#st" coords="270,152,341,230" shape="rect">
+</map><br>
+<h2 id="st">Click on ' SCREEN TIME '...</h2>
+<img src="iphone2.jpg" usemap="#image-map-2" id="img2">
+
+<map name="image-map-2">
+    <area target="_self" alt="" title="Screen Time" href="#tables" coords="13,407,15,481,719,481,717,413" shape="poly">
+</map>
+<h2 id="set">Here's My Phone's SCREEN TIME</h2>
+    <table id="tables">
+        <tr>
+          <th>Apps</th>
+          <th>Screen Time</th> 
+          <th>Last Used</th>
+        </tr>
+        <tr>
+          <td>Terminux</td>
+          <td>10 hr</td>
+          <td>5 mins ago</td>
+        </tr>
+        <tr>
+          <td>Microsoft Teams</td>
+          <td>5 hr</td>
+          <td>15 mins ago</td>
+        </tr>
+        <tr>
+          <td>Google Meet</td>
+          <td>4 hr</td>
+          <td>30 mins ago</td>
+        </tr>
+        <tr>
+            <td>iBooks</td>
+            <td>2 hr</td>
+            <td>35 mins ago</td>
+          </tr>
+          <tr>
+            <td>Reminder</td>
+            <td>25 mins</td>
+            <td>4 hr ago</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>3 hr</td>
+            <td>30 mins ago</td>
+          </tr>
+          <tr>
+            <td>Safari</td>
+            <td>3 hr</td>
+            <td>1 hr ago</td>
+          </tr>
+          <tr>
+            <td>Spotify</td>
+            <td>10 hr</td>
+            <td>30 sec ago</td>
+          </tr>
+          <tr>
+            <td>whatsapp</td>
+            <td>5 hr</td>
+            <td>30 mins ago</td>
+          </tr>
+          <tr>
+            <td>Discord</td>
+            <td>2 hr</td>
+            <td>7 mins ago</td>
+          </tr>
+          <tr>
+            <td>Mail</td>
+            <td>1 hr</td>
+            <td>12 mins ago</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>10 mins</td>
+            <td>3 hrs ago</td>
+          </tr>
+      </table>
+      <br>
+      
+      
+</body>
+</html>
