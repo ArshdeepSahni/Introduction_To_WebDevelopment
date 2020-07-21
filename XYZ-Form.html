@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-image: linear-gradient(to right bottom, white,rgb(0, 0, 0));
+      }
+      *{
+        text-align: center;
+      }
+      fieldset{
+        border:3px solid black;
+        height: 750px;
+      }
+      legend{
+        width: fit-content;
+        transition: 1s ease-in-out;
+        animation: 3s expand infinite ease-in-out;
+        color: rgba(0, 0, 0, 0);
+        font-size: 50px;
+        font-weight: bold; 
+      }
+      @keyframes expand{
+  50%{
+    color: black;
+    transition: 1s ease-in-out;
+    
+    width:fit-content;
+  }
+}
+th{
+  color: rgb(0, 174, 255);
+}
+      button{
+        transition: 1s ease-in-out;
+          background: rgb(255, 255, 255);
+          border: none;
+          color: rgb(0, 0, 0);
+
+        margin-left: 5%;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgb(0, 0, 0) ;
+        border-radius: 100px;
+      }
+        table{
+            margin-left: 34%;
+        }
+        .name{
+          margin-left: -0.5%;
+        }
+        .email{
+          margin-left: -17.5%;
+        }
+        .mob{
+          margin-left: -5.3%;
+        }
+        .gen{
+          margin-left: -18%;
+        }
+        .add{
+          margin-left: -17%;
+        }
+        .city{
+          margin-left: -5.5%;
+        }
+        .pin{
+          margin-left: -10.7%;
+        }
+        .state{
+          margin-left: -5%;
+        }
+        .con{
+          margin-left: -20%;
+        }
+        .hob{
+          margin-left: 8%;
+        }
+        .crs{
+          margin-left: -4%;
+        }
+        button:hover{
+          transition: 1s ease-in-out;
+          background: rgb(0, 153, 255);
+          color: white;
+          font-size: 20px;
+          box-shadow: inset 0px 0px 10px rgb(255, 255, 255);
+        }
+        /* .namei{
+          margin-right: -25%;
+        }
+        .emaili{
+          margin-left: -17.5%;
+        }
+        .mobi{
+          margin-left: -5.3%;
+        }
+        .geni{
+          margin-left: -18%;
+        }
+        .addi{
+          margin-left: -17%;
+        }
+        .cityi{
+          margin-left: -5.5%;
+        }
+        .pini{
+          margin-left: -10.7%;
+        }
+        .statei{
+          margin-left: -5%;
+        }
+        .coni{
+          margin-left: -20%;
+        }
+        .hobi{
+          margin-left: 8%;
+        }
+        .crsi{
+          margin-left: -4%;
+        } */
+    </style>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <fieldset>
+        <legend>STUDENT REGISTERATION FORM</legend>
+    <p><label class="name">FIRST NAME</label><input type="text" max="30" class="namei"><label>(max 30 charachters a-z and A-Z</label><br></p>
+    <label class="email">EMAIL ID</label><input type="text" class="emaili"><br>
+    <p><label class="mob">MOBILE NUMBER</label><input class="mobi" type="number" max="10"><label>(10 digit number)</label><br></p>
+    <p><label class="gen">GENDER</label><input class="geni" type="radio" name="gen">Male</input><input type="radio" name="gen">Female</input></p>
+    <p><label class="add">ADDRESS</label><textarea class="addi"></textarea><br></p>
+    <p><label class="city">CITY</label><input class="addi" type="text" max="30"><label>(max 30 charachters a-z and A-Z</label><br></p>
+    <p><label class="pin">PINCODE</label><input class="pini" type="number" max="5"><label>(5 digit number)</label><br></p>
+    <p><label class="state">STATE</label><input class="statei" type="text" max="30"><label>(max 30 charachters a-z and A-Z</label><br></p>
+    <p><label class="con">COUNTRY</label>
+        <select class="coni" name="Country" id="cars">
+          <option value="India">Volvo</option>
+          <option value="America">Saab</option>
+          <option value="Australia">Mercedes</option>
+          <option value="Dubai">Audi</option>
+        </select></p>
+        <p><label class="hob">HOBBIES</label><input class="hobi" type="checkbox" multiple>Dancing</input><input type="checkbox">Singing</input><input type="checkbox">Drawing</input><input type="checkbox">Sketching</input><input type="checkbox">Others</input><input type="checkbox"><input type="text"></input><br></p>
+        <p><label>QUALIFICATION</label><table>
+            <tr>
+                <th>S.No.</th>
+                <th>Examination</th>
+                <th>Board</th> 
+                <th>Percentage</th>
+                <th>Year Of Passing</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><input type="text" max="10"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><input type="text" max="10"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><input type="text" max="10"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><input type="text" max="10"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><label>(10 char max)</label></td>
+                <td>(upto 2 decimal)</td>
+                <td></td>
+                <td></td>
+              </tr>
+        </table>
+        <br>
+        </p>
+        <p><label class="crs">COURSES APPLIED FOR</label><input class="crsi" type="radio" name="crs">BCA</input><input type="radio" name="crs">B.Com</input><input type="radio" name="crs">B.Sc</input><input name="crs" type="radio">B.A</input><br></p>
+        <p><button class="sub">SUBMIT</button><button>RESET</button>
+    </p>
+    </fieldset>
+</body>
+</html>
