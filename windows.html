@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        transition: 1s ease-in-out;
+        background: #000;
+        animation: bg 10s infinite ease-in-out;
+      }
+      @keyframes bg {
+        10%{
+          transition: 1s ease-in-out;
+          background: rgb(255, 187, 0);
+        }
+        20%{
+          transition: 1s ease-in-out;
+          background: rgb(255, 255, 255);
+        }
+        30%{
+          transition: 1s ease-in-out;
+          background: rgb(0, 204, 255);
+        }
+        40%{
+          transition: 1s ease-in-out;
+          background: rgb(119, 0, 255);
+        }
+        50%{
+          transition: 1s ease-in-out;
+          background: rgb(183, 0, 255);
+        }
+        60%{
+          transition: 1s ease-in-out;
+          background: rgb(255, 0, 140);
+        }
+        70%{
+          transition: 1s ease-in-out;
+          background: rgb(48, 168, 0);
+        }
+        80%{
+          transition: 1s ease-in-out;
+          background: rgb(148, 72, 2);
+        }
+        90%{
+          transition: 1s ease-in-out;
+          background: rgb(12, 0, 68);
+        }
+        100%{
+          transition: 1s ease-in-out;
+          background: rgb(0, 0, 0);
+        }
+      }
+        *{
+            border-radius: 30px;
+            color: white;
+            /* border: 1px solid rgb(255, 255, 255); */
+        }
+        td{
+          border: 1px solid rgb(255, 255, 255);
+        }
+        .td1{
+          transition: 1s ease-in-out;
+          animation: rot 3s ease-in-out 0s infinite forwards;
+        }
+        @keyframes rot {
+          50%{
+            visibility: hidden;
+            animation-delay: 5s;
+            transition: 1s ease-in-out;
+            transform: rotatex(90deg);
+          }
+        }
+        .td2{
+          transition: 1s ease-in-out;
+          animation: rot2 4s ease-in-out 1s infinite forwards;
+        }
+        @keyframes rot2 {
+          50%{
+            visibility: hidden;
+            animation-delay: 5s;
+            transition: 1s ease-in-out;
+            transform: rotateY(90deg);
+          }
+        }
+        .td3{
+          transition: 1s ease-in-out;
+          animation: rot3 3s ease-in-out 2s infinite forwards;
+        }
+        @keyframes rot3 {
+          50%{
+            visibility: hidden;
+            animation-delay: 5s;
+            transition: 1s ease-in-out;
+            transform: rotatex(90deg);
+          }
+        }
+        .t2{
+          transition: 1s ease-in-out;
+          animation: rot4 3s ease-in-out 2s infinite forwards;
+        }
+        @keyframes rot4 {
+          50%{
+            visibility: hidden;
+            animation-delay: 5s;
+            transition: 1s ease-in-out;
+            transform: rotatey(90deg);
+          }
+        }
+        .tab2{
+          margin-top: -45px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table style="width:100%">
+        <tr>
+          <th colspan="2"><h1 style="text-shadow: 0px 0px 5px black;">WINDOWS - TABLET MODE</h1></th>
+        </tr>
+        <tr>
+          <td class="td1" style="border: 1px solid rgb(255, 255, 255);">
+            <img src="ms.png" height="670px" width="800px" sizes="cover" style="border: none;" usemap="#image-map6">
+            <map name="image-map6">
+              <area target="_self" alt="Microsoft Store" title="Microsoft Store" href="https://www.microsoft.com/en-in" coords="766,765,2,2" shape="rect">
+          </map>
+            <br></td>
+          <td style="width: 700px;padding-top: 3%;border: none;">
+        <table style="border: none;" class="tab2">
+              <tr>
+                <td class="td1"><img src="fb.png" width="290px" style="border: none !important;"><br></td>
+                <td class="td2">
+                  <img src="tweet.png" width="290px" height="385px" style="border: none !important;" usemap="#image-map">
+                  <map name="image-map">
+                      <area target="_self" alt="Twitter" title="Twitter" href="https://twitter.com/explore" coords="224,224,0,0" shape="rect">
+                  </map>
+                  <br></td>
+                </tr>
+                <tr>
+                    <td class="td2">
+                      <img src="mail.png" width="290px" height="325px" style="border: none !important;" usemap="#image-map5">
+                      <map name="image-map5">
+                        <area target="_self" alt="Mail" title="Mail" href="mailto:arsh22sahni@gmail.com" coords="858,393,0,1" shape="rect">
+                    </map>
+                      <br></td>
+                    <td class="td1">
+                      <img src="call.png" width="290px" height="325px" style="border: none !important;" usemap="#image-map">
+                      <map name="image-map">
+                        <area target="_self" alt="Call" title="Call" href="tel:1234567890" coords="511,510,0,2" shape="rect">
+                      </map>
+                      <br></td>
+                    </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+          <td class="td2">
+            <img src="ch.png" height="500px" width="800px" sizes="cover" style="border: none !important;" usemap="#image-map2">
+            <map name="image-map2">
+              <area target="_self" alt="Google Chrome" title="Google Chrome" href="https://www.google.com/" coords="511,510,0,1" shape="rect">
+            </map>
+            <br></td>
+            <td rowspan="2" style="border: none;">
+              <img  class="td1"  src="fb.png" width="313px" style="border: 1px solid rgb(255, 255, 255);" usemap="#image-map3"><img  class="td2"  src="fb.png" width="290px" height="415px" style="border: 1px solid rgb(255, 255, 255);"><img  class="td2"  src="fb.png" width="313px" style="border: 1px solid rgb(255, 255, 255);"><img  class="td3"  src="fb.png" width="290px" height="415px" style="border: 1px solid rgb(255, 255, 255);"><img src="fb.png"  class="td1"  width="313px" style="border: 1px solid rgb(255, 255, 255);"><img src="fb.png"  class="td2" width="290px" height="415px" style="border: 1px solid rgb(255, 255, 255);">
+            </td>
+          </tr>
+          <tr>
+            <td class="td1">
+              <img src="ie.png" height="500px" width="800px" sizes="cover" style="border: none !important;" usemap="#image-map4">
+              <map name="image-map4">
+                <area target="_self" alt="Internet Explorer" title="Internet Explorer" href="https://internet-explorer-9-vista-32.en.softonic.com/" coords="1198,1199,0,0" shape="rect">
+            </map>
+              <br></td>
+            <td style="border: none;"></td>
+          </tr>
+      </table>
+  
+</body>
+</html>
